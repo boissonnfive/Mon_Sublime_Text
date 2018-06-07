@@ -1,0 +1,4 @@
+{
+	// add trailing #'s to headlines
+	"mde.match_header_hashes": true
+}

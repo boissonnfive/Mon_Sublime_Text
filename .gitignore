@@ -1,0 +1,25 @@
+ # Tout ignorer sauf le fichier .gitignore
+*
+!.gitignore
+
+# Garder aussi ...
+# Mes notes
+!*.md
+# les raccourcis clavier
+!*.sublime-keymap
+# les préférences
+!*.sublime-settings
+# les builds
+!*.sublime-build
+# le code
+!*.py
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

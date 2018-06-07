@@ -1,0 +1,84 @@
+[
+
+	// --------------------------------------------------------------------------------
+	// Général	
+	// Pour mettre en majuscule la première lettre du mot sous le curseur
+	
+	{ "keys": ["ctrl+k", "ctrl+q"], "command": "title_case" },
+
+
+	// --------------------------------------------------------------------------------
+	// Mardown Preview : pour afficher un aperçu du fichier markdown dans un navigateur
+
+	{ "keys": ["alt+m"], "command": "markdown_preview", "args": { "target": "browser", "parser":"markdown" } },
+
+
+	// --------------------------------------------------------------------------------
+	// MarkdownTodo : redéfinition des raccourcis pour ne pas rentrer en conflit avec
+	// les raccourcis par défaut de Sublime Text 2
+
+	{ "keys": ["ctrl+alt+c"], "command": "cocher" },
+    { "keys": ["ctrl+alt+n"], "command": "nouveau" },
+
+    // --------------------------------------------------------------------------------
+	// add_date.py (à ajouter dans le paquet "User") : pour insérer la date du jour au
+	// format : Nom_du_jour Numéro_de_jour Nom_du_mois Année
+	// ex : Mardi 15 Octobre 2015 
+	
+	{"keys": ["super+alt+d"], "command": "add_date" }, 
+	{"keys": ["super+alt+t"], "command": "add_time" } 
+
+    // --------------------------------------------------------------------------------
+	// Config pour modifier la disposition des écrans :
+	//     - ctrl+alt+left     : divise les 2 écrans en 1/3,2/3
+	//     - ctrl+alt+right    : divise les 2 écrans en 2/3,1/3
+	//     - ctrl+alt+up       : divise les 2 écrans en 50/50
+	//     - ctrl+alt+down     : ne garde qu'un écran
+	//     - ctrl+shift+left   : déplace le fichier actif dans l'écran de gauche
+	//     - ctrl+shift+right  : déplace le fichier actif dans l'écran de droite
+
+	/*{
+		"keys": ["ctrl+alt+left"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.33, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+		}
+	},
+	{
+		"keys": ["ctrl+alt+right"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.66, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+		}
+	},
+	{
+		"keys": ["ctrl+alt+up"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.5, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+		}
+	},
+	{
+		"keys": ["ctrl+alt+down"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+		}
+	},
+	{ "keys": ["ctrl+shift+left"], "command": "move_to_group", "args": { "group": 0 } },
+	{ "keys": ["ctrl+shift+right"], "command": "move_to_group", "args": { "group": 1 } }*/
+
+
+]
