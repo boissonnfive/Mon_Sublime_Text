@@ -1,14 +1,6 @@
 {
-	"alignment_chars":
-	[
-		"=",
-		":"
-	],
-	"alignment_space_chars":
-	[
-		"=",
-		":"
-	],
+	"alignment_chars":["=", ":"],
+	"alignment_space_chars":["=", ":"],
 	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
 	"font_face": "MonacoB2",
 	"font_size": 12.0,
@@ -20,5 +12,9 @@
 		"Vintage"
 	],
 	"tab_size": 4,
-	"theme": "Default.sublime-theme"
+	"theme": "Default.sublime-theme",
+	// Set to false to disable scrolling past the end of the buffer.
+    // On OS X, this value is overridden in the platform specific settings, so
+    // you'll need to place this line in your user settings to override it.
+    "scroll_past_end": true
 }
