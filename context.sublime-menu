@@ -1,0 +1,6 @@
+[
+     { "command": "bruno_terminer_tache", "caption": "Bruno : Terminer la tâche" },
+     { "command": "bruno_nouvelle_tache", "caption": "Bruno : Créer une nouvelle tâche" },
+     { "command": "bruno_insere_date", "caption": "Bruno : Insérer la date" },
+     { "command": "bruno_insere_heure", "caption": "Bruno : Insérer l'heure" }
+]
