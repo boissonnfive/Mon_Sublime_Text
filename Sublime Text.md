@@ -13,7 +13,7 @@ Pour obtenir les raccourcis sur mac, il faut remplacer Ctrl par ⌘, sauf quand 
 
 - Passer en majuscule                                       : ⌘ K U
 - Passer en minuscule                                       : ⌘ K L
-- Mettre la première lettre en majuscule                    : ⌘ K T [1](1)
+- Mettre la première lettre en majuscule                    : ⌘ K T [1]
 - Sélectionner toutes les occurences d'une variable         : ⌘ ⌃ G
 - Sélectionner une occurence de plus d'une variable         : ⌘ D
 - Déplacer une ligne                                        : ⌘ ⌃ ↑ ou ↓
@@ -24,7 +24,7 @@ Pour obtenir les raccourcis sur mac, il faut remplacer Ctrl par ⌘, sauf quand 
 - Rechercher dans des fichiers                              : ⌘ ⇧ F
 - Afficher la palette de commandes                          : ⌘ ⇧ P
 - Ré-ouvrir le dernier fichier fermé                        : ⌘ ⇧ T
-- Aligner les : ou = dans une sélection de lignes           : ⌘ ⌃ A [2](2)
+- Aligner les : ou = dans une sélection de lignes           : ⌘ ⌃ A [2]
 - Sélectionner plusieurs colonnes                           : ⇧ Clic droit (⌥ clic)
 - Sélectionner X lignes pour avoir X curseurs               : ⌘ ⇧ L
 
@@ -56,9 +56,10 @@ Pour obtenir les raccourcis sur mac, il faut remplacer Ctrl par ⌘, sauf quand 
 - Afficher un aperçu HTML        (Markdown Preview)         : ⌥ M
 
 
-[1] : si on met :{ "keys": ["ctrl+k", "ctrl+t"], "command": "title_case" } dans ses préférences utilisateur
-[2] : nécessite le module *Alignment*
-[3] : nécessite le module *SmartMarkdown*
+---
+- [1]: si on met :{ "keys": ["ctrl+k", "ctrl+t"], "command": "title_case" } dans ses préférences utilisateur
+- [2]: nécessite le module *Alignment*
+
 
 
 
@@ -70,8 +71,8 @@ Pour obtenir les raccourcis sur mac, il faut remplacer Ctrl par ⌘, sauf quand 
 1. Ajouter ce dossier à votre projet (qui va ainsi être créé): **Project > Add Folder to Project…** (Les fichiers du dossier doivent maintenant apparaître dans la barre latérale)
 1. Enregistrer le projet: **Project > Save Project As…**. 2 fichiers sont créés:
 
-    your_project.sublime-project
-    your_project.sublime-workspace
+        your_project.sublime-project
+        your_project.sublime-workspace
 
 ### Ouvrir un fichier en hexadécimal
 
@@ -88,7 +89,7 @@ Pour obtenir les raccourcis sur mac, il faut remplacer Ctrl par ⌘, sauf quand 
 
 ### Taper des commandes python
 
-Aller dans la console (Ctrl+`) ou View -> Show Console et taper :
+Aller dans la console (Ctrl+ù) ou View -> Show Console et taper :
 
     sublime.version()
 
@@ -98,6 +99,55 @@ Aller dans la console (Ctrl+`) ou View -> Show Console et taper :
 - ctrl+shift+b : lancer le fichier (la sortie est affichée dans Sublime Text)
 - ctrl+)       : Indenter
 - ctrl+^       : Désindenter
+
+## Créer une commande dans Sublime Text
+
+### Le squelette de la commande
+
+*NOTE: ATTENTION aux tabulations en Python => Il faut des espaces.*
+
+    import sublime, sublime_plugin
+         
+    class UnNomDeCommandeCommand(sublime_plugin.TextCommand):
+        def run(self, edit):
+
+À enregistrer dans un fichier .py dans le dossier Packages/User.
+
+
+### Quelques variables utiles
+
+    ${packages} # => renvoi le chemin complet du dossier "packages"
+
+### Quelques fonctions utiles
+
+    # Affiche une boîte de dialogue
+    sublime.message_dialog("Région vide")
+    # Affiche dans la console
+    print("Plusieurs lignes (%d)" % len(lines))
+    
+    # Ouvre un fichier du dossier $packages/User
+    sublime.active_window().run_command("open_file", { "file": "${packages}/User/Sublime Text.md"})
+    
+    # Récupère la sélection
+    for region in self.view.sel():
+    
+    # Récupère les lignes ( ie des Régions)
+    lines = self.view.lines(region)
+    
+    # Récupère le contenu de la ligne
+    if region.empty():
+        line = self.view.line(region)
+        line_contents = self.view.substr(line)
+    
+    # Insère dans la ligne en cours
+    self.view.insert(edit, line.begin(), line_contents)
+    
+    # Remplace la ligne en cours (line) par une chaine (line_contents)
+    self.view.replace(edit, line, line_contents)
+    
+    # Efface la chaîne en paramètre
+    self.view.erase(edit, chaine)
+
 
 
 ## Ma config
@@ -162,14 +212,6 @@ source : <http://docs.sublimetext.info/en/latest/reference/completions.html>
         "windows": {
                    "cmd": ["cmd.exe", "/c", "${file_path}\\\\${file_base_name}.exe"]
         }
-
-
-### SmartMarkdown ###
-
-- but          : Ne garder que les raccourcis utiles
-- fichier      : Default.sublime-keymap
-- localisation : "C:\Users\Bruno\AppData\Roaming\Sublime Text 2\Packages\SmartMarkdown"
-- modification : tout commenter sauf "smart\_folding" et "global\_folding"
 
 
 ### Markdown Preview ###
@@ -251,44 +293,44 @@ Je n'utilise pas la même police ni le même thème sur Windows et mac; donc les
 - OS : OSX
 - Modifications :
 
-    {
-        "color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
-        "font_face": "MonacoB2",
-        "font_size": 12.0,
-        "highlight_modified_tabs": true,
-        "ignored_packages":
-        [
-            "Markdown",
-            "Vintage"
-        ],
-        "log_commands": true,
-        "log_input": true,
-        "tab_size": 4
-    }
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+            "font_face": "MonacoB2",
+            "font_size": 12.0,
+            "highlight_modified_tabs": true,
+            "ignored_packages":
+            [
+                "Markdown",
+                "Vintage"
+            ],
+            "log_commands": true,
+            "log_input": true,
+            "tab_size": 4
+        }
 
 - fichier : Preferences.sublime-settings
 - OS : OSX
 - Modifications :
 
-    {
-      "color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
-      "font_face": "Consolas",
-      "font_size": 11,
-      "highlight_modified_tabs": true,
-      "ignored_packages":
-      [
-        "Vintage"//,
-        // "Package Control",
-        // "MarkdownEditing",
-        // "Markdown Preview",
-        // "SmartMarkdown",
-        // "VBSript",
-        // "orgmode",
-        // "mdTodo/MarkdownT",
-        // "FindKeyConflicts",
-        // "PowerShell"
-      ]
-    }
+        {
+          "color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+          "font_face": "Consolas",
+          "font_size": 11,
+          "highlight_modified_tabs": true,
+          "ignored_packages":
+          [
+            "Vintage"//,
+            // "Package Control",
+            // "MarkdownEditing",
+            // "Markdown Preview",
+            // "SmartMarkdown",
+            // "VBSript",
+            // "orgmode",
+            // "mdTodo/MarkdownT",
+            // "FindKeyConflicts",
+            // "PowerShell"
+          ]
+        }
 
 
 ### Modification du raccourci clavier pour afficher la console ##
