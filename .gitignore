@@ -13,6 +13,13 @@
 !*.sublime-build
 # le code
 !*.py
+# les commandes
+!*.sublime-commands
+# les snippets
+!*.sublime-snippet
+# les menus
+!*.sublime-menu
+
 
 # OS generated files #
 ######################
