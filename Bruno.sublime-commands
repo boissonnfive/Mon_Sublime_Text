@@ -1,0 +1,20 @@
+[
+  { "caption": "Bruno: Aide Sublime Text",
+    "command": "open_file",
+    "args": {
+      "file": "${packages}/User/Sublime Text.md"
+    }
+  },
+  { "caption": "Bruno: Terminer la tâche",
+    "command": "bruno_terminer_tache"
+  },
+  { "caption": "Bruno: Nouvelle tâche",
+    "command": "bruno_nouvelle_tache"
+  },
+  { "caption": "Bruno: Ajouter la date du jour",
+    "command": "bruno_insere_date"
+  },
+  { "caption": "Bruno: Ajouter l'heure du jour",
+    "command": "bruno_insere_heure"
+  }
+]
