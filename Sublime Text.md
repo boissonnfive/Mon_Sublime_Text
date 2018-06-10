@@ -173,6 +173,8 @@ Aller dans la console (Ctrl+ù) ou View -> Show Console et taper :
 - **FindKeyConflicts** : Recherche les raccourcis associés à plusieurs paquets
 - **mdTODO**           :
 - **orgmode**          : pour faire du orgmode dans Sublime Text
+    + "-c"+tab         : crée une liste non cochée
+    + Entrer           : coche la case à cocher
 
 ## Mes Modifications
 
