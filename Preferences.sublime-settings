@@ -1,9 +1,18 @@
 {
-	"alignment_chars":["=", ":"],
-	"alignment_space_chars":["=", ":"],
-	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+	"alignment_chars":
+	[
+		"=",
+		":"
+	],
+	"alignment_space_chars":
+	[
+		"=",
+		":"
+	],
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
 	"font_face": "MonacoB2",
-	"font_size": 12.0,
+	"font_size": 14.0,
+	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -11,10 +20,13 @@
 		"Markdown Todo",
 		"Vintage"
 	],
+	"line_padding_bottom": 0,
+	"scroll_past_end": true,
+	"show_encoding": true,
+	"show_line_endings": true,
 	"tab_size": 4,
-	"theme": "Default.sublime-theme",
-	// Set to false to disable scrolling past the end of the buffer.
-    // On OS X, this value is overridden in the platform specific settings, so
-    // you'll need to place this line in your user settings to override it.
-    "scroll_past_end": true
+	"theme": "Material-Theme-Darker.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"save_on_focus_lost": true,
+	"copy_with_empty_selection": false
 }

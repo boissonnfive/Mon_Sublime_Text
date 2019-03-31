@@ -9,23 +9,23 @@
 
   <title>${1:Squelette HTML5}</title>
 
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="icon" href="images/favicon.png"> -->
 </head>
 
 <body>
 
   <header>
     <h1>${1:Squelette HTML5}</h1>
-  </header>
 
-  <nav>
-    <ul>
-      <li><a href="#">Lien 1</a></li>
-      <li><a href="#">Lien 2</a></li>
-      <li><a href="#">Lien 3</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <ul>
+        <li><a href="#">Lien 1</a></li>
+        <li><a href="#">Lien 2</a></li>
+        <li><a href="#">Lien 3</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <section>
     <h2>Titre de Section</h2>
@@ -39,14 +39,14 @@
     <p>&copy; 2018 Bruno Boissonnet. Tous droits réservés.</p>
   </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="js/scripts.js"></script> -->
 
 </body>
 </html>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>template</tabTrigger>
+	<tabTrigger>html5</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>text.html</scope>
 </snippet>

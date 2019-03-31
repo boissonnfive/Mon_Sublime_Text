@@ -12,6 +12,10 @@
 
 	{ "keys": ["ctrl+ù"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
+	// Pour réindenter le code
+
+	{ "keys": ["super+shift+r"], "command": "bruno_selectionne_tout_et_reindente" },
+
 
 	// --------------------------------------------------------------------------------
 	// Alignment : aligne sur le ":" ou le "="
@@ -48,7 +52,12 @@
 	// Le raccourci pour diminuer le niveau d'un titre est : ⌘ ⇧ ,
 	
     { "keys": ["super+shift+;"], "command": "change_heading_level", "args": {"up": true}, "context": [{"key": "selector", "operator": "equal", "operand": "text.html.markdown"}] },
-	{ "keys": ["super+shift+,"], "command": "change_heading_level",	"args": {"up": false}, "context": [{"key": "selector", "operator": "equal", "operand": "text.html.markdown"}] }
+	{ "keys": ["super+shift+,"], "command": "change_heading_level",	"args": {"up": false}, "context": [{"key": "selector", "operator": "equal", "operand": "text.html.markdown"}] },
+
+	// --------------------------------------------------------------------------------
+	// Terminus : définition d'un raccourci pour afficher/cacher le panneau du Terminal : Ctrl + Shift + ù
+	
+	{ "keys": ["ctrl+shift+ù"], "command": "toggle_terminus_panel" }
 
     // --------------------------------------------------------------------------------
 	// Config pour modifier la disposition des écrans :

@@ -6,15 +6,22 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"Alignment",
+		"Colorsublime",
+		"Emmet",
 		"FindKeyConflicts",
+		"Git",
 		"Markdown Todo",
 		"MarkdownEditing",
 		"MarkdownPreview",
+		"Material Theme",
 		"orgmode",
 		"Package Control",
 		"PowerShell",
 		"SmartMarkdown",
+		"Terminus",
+		"UnicodeNormalizer",
 		"VBScript",
 		"View In Browser"
 	]
