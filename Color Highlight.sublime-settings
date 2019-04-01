@@ -12,7 +12,6 @@
             "fill" - Fill gutter with color
             false - Disable gutter icon
         */
-        "gutter_icon": "false",
-        
+        "gutter_icon": false
     }
 }
