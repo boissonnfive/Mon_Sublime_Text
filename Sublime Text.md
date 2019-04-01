@@ -9,6 +9,9 @@ C'est un éditeur que j'utilise pour écrire des notes (principalement en Markdo
 
 Pour obtenir les raccourcis sur mac, il faut remplacer Ctrl par ⌘, sauf quand il y a un astérisque (*) dans le raccourci. Dans les autres cas, le raccourci mac est écrit.
 
+**Si on ne doit retenir qu'un seul raccourci, c'est celui de la palette de commande : ⌘ ⇧ P**
+
+
 ### Génériques ###
 
 - Passer en majuscule                                       : ⌘ K U
@@ -61,11 +64,17 @@ Pour obtenir les raccourcis sur mac, il faut remplacer Ctrl par ⌘, sauf quand 
 - [2]: nécessite le module *Alignment*
 
 
+### C/C++ ###
+
+- Compiler le fichier (créer un fichier .exe)                  : ⌘ B
+- Lancer le fichier (la sortie est affichée dans Sublime Text) : ⌘ ⇧ B
+- Indenter                                                     : ⌘ )
+- Désindenter                                                  : ⌘ ^
 
 
 ## Les astuces
 
-### Créer un projet
+### Créer un projet ###
 
 1. Mettre tous les fichiers de son projet dans un dossier
 1. Ajouter ce dossier à votre projet (qui va ainsi être créé): **Project > Add Folder to Project…** (Les fichiers du dossier doivent maintenant apparaître dans la barre latérale)
@@ -74,31 +83,49 @@ Pour obtenir les raccourcis sur mac, il faut remplacer Ctrl par ⌘, sauf quand 
         your_project.sublime-project
         your_project.sublime-workspace
 
-### Ouvrir un fichier en hexadécimal
+
+### Ouvrir un fichier en hexadécimal ###
 
 1. Menu File > Reopen with Encoding
 2. Hexadecimal
 
 
-### Les dossiers de configuration
+### Les dossiers de configuration ###
 
 - Windows : %APPDATA%\Sublime Text 3
 - OS X    : ~/Library/Application Support/Sublime Text 3
 - Linux   : ~/.config/sublime-text-3
 
 
-### Taper des commandes python
+### Taper des commandes python ###
 
 Aller dans la console (Ctrl+ù) ou View -> Show Console et taper :
 
     sublime.version()
 
-### C/C++
 
-- ctrl+b       : compiler le fichier (créer un fichier .exe).
-- ctrl+shift+b : lancer le fichier (la sortie est affichée dans Sublime Text)
-- ctrl+)       : Indenter
-- ctrl+^       : Désindenter
+### Modifier le raccourci d'une commande (ex: afficher la console)
+
+Sur un clavier AZERTY, il est impossible de tape le raccourci "ctrl+`". Pour afficher la console, on peut modifier ce raccourci pour qu'il devienne : "ctrl+ù".
+
+#### 1. Récupérer le nom de la commande qui affiche la console :
+
+1. Ouvrir la console par le menu
+2. Dans la console, taper :
+    
+        sublime.log_commands(True)
+        sublime.log_input(True) # trace les raccourcis clavier
+
+3. Aller dans le menu et ouvrir la console
+4. Récupérer le nom de la commande dans la console
+
+#### 2. Créer un raccourci pour cette commande
+
+1. Ouvrir le fichier Default (OSX).sublime-keymap (pour OSX, sinon prendre celui de Windows)
+2. Taper la ligne suivante :
+
+        { "keys": ["ctrl+ù"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
 
 ## Créer une commande dans Sublime Text
 
@@ -152,29 +179,51 @@ Aller dans la console (Ctrl+ù) ou View -> Show Console et taper :
 
 ## Ma config
 
-### Paquets installés
+### Paquets installés (28)
 
-- **package control**  : pour installer de nouveaux paquets
-- **MarkdownEditing**  : pour afficher les fichiers markdown + raccourcis
-- **Markdown Preview** : pour afficher un fichier Markdown en HTML dans le navigateur (⌥ M)
-    + Markdown Preview: Preview in Browser
+[*Remarque : ⌘ + ⇧ + P (command palette) + list package*]
+
+- **A File Icon**           : Ensemble d'icônes pour Sublime Text
+- **Alignment**             : Aligne le texte selon : ou =
+- **AutoFileName**          : Insére un nom de fichier automatiquement
+- **Color Highlight**       : Affiche la couleur d'une valeur dans le CSS
+- **ColorPicker**           : Affiche une dialogue de sélection de couleur
+- **Colorsublime**          : 
+- **Colorsublime - Themes** : 
+- **DocBlockr**             : Insére un bloc de commentaire de type JavaDoc
+- **Emmet**                 : offre des raccourcis pour le HTML et le CSS
+- **FindKeyConflicts**      : Recherche les raccourcis associés à plusieurs paquets
+- **Git**                   : Affiche le statut git dans la barre d'état
+- **MarkdownEditing**       : Affiche la coloration syntaxique du Markdown
+- **MarkdownPreview**       : Affiche le document Markdown dans un navigateur
+    + Markdown Preview: Preview in Browser (⌥ M)
     + Markdown Preview: Export HTML in Sublime Text
     + Markdown Preview: Copy to Clipboard
     + Markdown Preview: Open Markdown Cheat sheet
     + Permet d'utiliser son propre modèle HTML
-- **SmartMarkdown**    : copie le fonctionnement de orgmode pour Markdown
+- **MarkdownTodo**   : ajoute des commandes sur les tâches (*Seulement sur ST2*)
+- **Material Theme** : installe un thème sombre et bleu turquoise
+- **orgmode**        : pour faire du orgmode dans Sublime Text
+    + "-c"+tab         : crée une liste non cochée
+    + Entrer           : coche la case à cocher
+- **Package Control** : installateur de paquets pour Sublime Text
+- **PowerShell**      : 
+- **PyV8**            :
+- **Settings**        :
+- **SideBarEnhancements**  : Ajoute X actions au menu contextuel de la side bar
+- **SmartMarkdown**   : copie le fonctionnement de orgmode pour Markdown
     + Pliage/Dépliage des titres (⇥)
     + Pliage/Dépliage global (Maj + ⇥)
     + Augmente/Diminue le niveau des titres (⌘ ⇧ ; / ⌘ ⇧ ,)
     + Continuation des listes après appuis sur ↩
     + Tableaux intelligents (⇥)
-- **VBSript**          : coloration syntaxique + snippets pour VBScript
-- **Alignment**        : pour aligner le texte selon : ou =
-- **FindKeyConflicts** : Recherche les raccourcis associés à plusieurs paquets
-- **mdTODO**           :
-- **orgmode**          : pour faire du orgmode dans Sublime Text
-    + "-c"+tab         : crée une liste non cochée
-    + Entrer           : coche la case à cocher
+- **SublimeLinter**   : Signale les erreurs dans le code
+- **SublimeServer**   : Lance un serveur HTTP
+- **Terminus**        : Affiche le Terminal dans Sublime Text (un panneau en bas)
+- **UnicodeNormalizer**   : Transforme un fichier UTF-8 en Unicode Normalization Form C (pour la validation W3C)
+- **VBScript**            : affiche la coloration syntaxique du VBScript + snippets
+- **View In Browser**     : Affiche le contenu du fichier dans un navigateur
+- **zzz A File Icon zzz** : Ensemble d'icônes pour Sublime Text (modifié pour le Material Theme)
 
 ## Mes Modifications
 
@@ -311,7 +360,7 @@ Je n'utilise pas la même police ni le même thème sur Windows et mac; donc les
         }
 
 - fichier : Preferences.sublime-settings
-- OS : OSX
+- OS : Windows
 - Modifications :
 
         {
@@ -335,29 +384,7 @@ Je n'utilise pas la même police ni le même thème sur Windows et mac; donc les
         }
 
 
-### Modification du raccourci clavier pour afficher la console ##
 
-Le but : utiliser "ctrl+ù" au lieu de "ctrl+`" (qui ne fonctionne pas, voir ci-dessous comment tracer les raccourcis clavier).
-
-Il faut modifier le fichier Default (OSX).sublime-keymap pour y ajouter:
-
-    // Console : Modification du raccourci pour afficher la console : Ctrl + ù
-    // (au lieu de Ctrl + ` qui ne fonctionne pas sur un clavier Fr)
-
-    { "keys": ["ctrl+ù"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
-
-
-__Tracer les commandes (pour connaître la commande d'affichage de la console):__
-        
-        sublime.log_commands(True)
-
-__Tracer les raccourcis clavier (pour voir ce qui est reçu quand on tape "ctrl+`"):__
-
-        sublime.log_input(True)
-
-- fichier : Default (OSX).sublime-keymap
-- but     : remplacer le raccouris pour afficher la console
-- modification :
 
 
 

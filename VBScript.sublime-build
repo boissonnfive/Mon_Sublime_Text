@@ -1,0 +1,29 @@
+{
+    "selector": "source.vbs",
+    "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+    "cmd": [ "echo", "Error: VBScript build not supported for this OS." ],
+    "encoding": "cp850",
+
+    "windows":
+    {
+        "cmd": [ "cscript.exe", "//Nologo" , "$file" ]
+    },
+
+    "variants":
+    [
+        {
+            "name": "Run with WScript",
+            "windows":
+            {
+                "cmd": ["wscript.exe", "$file"]
+            }
+        },
+        {
+            "name": "Debug with CScript",
+            "windows":
+            {
+                "cmd": ["cscript.exe", "//x", "//d", "$file"]
+            }
+        }
+    ]
+}

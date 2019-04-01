@@ -1,20 +1,35 @@
 [
-  { "caption": "Bruno: Aide Sublime Text",
+  {
+    "caption": "Bruno: Aide Sublime Text",
     "command": "open_file",
     "args": {
       "file": "${packages}/User/Sublime Text.md"
     }
   },
-  { "caption": "Bruno: Terminer la tâche",
+  {
+    "caption": "Bruno: Terminer la tâche",
     "command": "bruno_terminer_tache"
   },
-  { "caption": "Bruno: Nouvelle tâche",
+  {
+    "caption": "Bruno: Nouvelle tâche",
     "command": "bruno_nouvelle_tache"
   },
-  { "caption": "Bruno: Ajouter la date du jour",
+  {
+    "caption": "Bruno: Ajouter la date du jour",
     "command": "bruno_insere_date"
   },
-  { "caption": "Bruno: Ajouter l'heure du jour",
+  {
+    "caption": "Bruno: Ajouter l'heure du jour",
     "command": "bruno_insere_heure"
-  }
+  },
+  {
+    "caption": "Bruno: Sélectionne tout et réindente",
+    "command": "bruno_selectionne_tout_et_reindente"
+  },
+// Ajout d'une commande pour le plugin Alignment
+{
+  "caption": "Alignment: indent",
+  "command": "alignment",
+  "args": {}
+}
 ]

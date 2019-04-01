@@ -19,6 +19,12 @@
 !*.sublime-snippet
 # les menus
 !*.sublime-menu
+# les completions
+!*.sublime-completions
+# les autres ?
+!*.tmLanguage
+!*.sublime-theme
+!*.tmTheme
 
 
 # OS generated files #

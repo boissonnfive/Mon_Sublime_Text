@@ -1,0 +1,14 @@
+{
+//"scope": "source.lua",
+
+    "completions":
+    [
+            "Bruno Boissonnet",
+            "bruno.boissonnet@gmail.com",
+            "boissonnfive@gmail.com",
+            "contact@binfoservice.fr",
+            "boissonnfive@hotmail.com",
+            "17 rue du liron 30133 LES ANGLES"
+            //{ "trigger": "lir", "content" : "17 rue du Liron 30133 LES ANGLES" }
+    ]
+}
