@@ -1,6 +1,13 @@
 [
   {
-    "caption": "Bruno: Aide Sublime Text",
+    "caption": "Bruno: Mes raccourcis Sublime Text",
+    "command": "open_file",
+    "args": {
+      "file": "${packages}/User/raccourcis.md"
+    }
+  },
+  {
+    "caption": "Bruno: Mes notes sur Sublime Text",
     "command": "open_file",
     "args": {
       "file": "${packages}/User/Sublime Text.md"

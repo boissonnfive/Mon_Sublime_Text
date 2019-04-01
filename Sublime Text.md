@@ -106,7 +106,7 @@ Aller dans la console (Ctrl+ù) ou View -> Show Console et taper :
 
 ### Modifier le raccourci d'une commande (ex: afficher la console)
 
-Sur un clavier AZERTY, il est impossible de tape le raccourci "ctrl+`". Pour afficher la console, on peut modifier ce raccourci pour qu'il devienne : "ctrl+ù".
+Sur un clavier AZERTY, il est impossible de taper le raccourci "ctrl+`". Pour afficher la console, on peut modifier ce raccourci pour qu'il devienne : "ctrl+ù".
 
 #### 1. Récupérer le nom de la commande qui affiche la console :
 
@@ -179,7 +179,7 @@ Sur un clavier AZERTY, il est impossible de tape le raccourci "ctrl+`". Pour aff
 
 ## Ma config
 
-### Paquets installés (28)
+### Paquets installés (28) ###
 
 [*Remarque : ⌘ + ⇧ + P (command palette) + list package*]
 
