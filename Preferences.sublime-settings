@@ -1,5 +1,4 @@
 {
-	// Alignement : ajoute le symbôle : pour l'alignement
 	"alignment_chars":
 	[
 		"=",
@@ -10,24 +9,18 @@
 		"=",
 		":"
 	],
-	// Markdown Editing add trailing #'s to headlines
-	"mde.match_header_hashes": true,
-	// MarkdownPreview : affiche dans Firefox
 	"browser": "/Applications/Firefox.app",
-	// Color Highlight : affiche la couleur en surbrillance sur la valeur du fichier CSS
-	"ha_style": "filled",
-	// ------------------------------------------------------------------------------
-	//                                   SUBLIME TEXT
-	// ------------------------------------------------------------------------------
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
 	"copy_with_empty_selection": false,
 	"font_face": "MonacoB2",
 	"font_size": 14.0,
+	"ha_style": "filled",
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"ColorPicker",
+		"Git",
 		"Markdown",
 		"Markdown Todo",
 		"Vintage"
@@ -35,6 +28,7 @@
 	"line_padding_bottom": 0,
 	"log_commands": true,
 	"log_input": true,
+	"mde.match_header_hashes": true,
 	"save_on_focus_lost": true,
 	"scroll_past_end": true,
 	"show_encoding": true,

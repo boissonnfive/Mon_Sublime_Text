@@ -26,10 +26,10 @@
     "caption": "Bruno: Sélectionne tout et réindente",
     "command": "bruno_selectionne_tout_et_reindente"
   },
-// Ajout d'une commande pour le plugin Alignment
-{
-  "caption": "Alignment: indent",
-  "command": "alignment",
-  "args": {}
-}
+  // Ajout d'une commande pour le plugin Alignment
+  {
+    "caption": "Alignment: indent",
+    "command": "alignment",
+    "args": {}
+  }
 ]
