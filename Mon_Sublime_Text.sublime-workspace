@@ -1,0 +1,588 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"rg",
+				"rgba()\tbackground-color"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"u",
+				"uppercase\ttext-transform"
+			],
+			[
+				"back",
+				"background-image\tproperty"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"su",
+				"supplémentaires"
+			],
+			[
+				"Para",
+				"Paramètre1"
+			],
+			[
+				"line",
+				"line_contents"
+			],
+			[
+				"sub",
+				"sublime"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Bruno.sublime-commands",
+			"settings":
+			{
+				"buffer_size": 1108,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [32]\n→ gs\nOn branch master\nYour branch is up-to-date with 'origin/master'.\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   Bruno.sublime-commands\n        modified:   Package Control.sublime-settings\n        modified:   Preferences.sublime-settings\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [32]\n→ git diff\ndiff --git a/Bruno.sublime-commands b/Bruno.sublime-commands\nindex d58c894..ab52487 100644\n--- a/Bruno.sublime-commands\n+++ b/Bruno.sublime-commands\n@@ -38,5 +38,11 @@\n     \"caption\": \"Alignment: indent\",\n     \"command\": \"alignment\",\n     \"args\": {}\n+  },\n+  // Ajout d'une commande pour la fin de ligne Windows\n+  {\n+    \"caption\": \"Fin de ligne: windows\",\n+    \"command\": \"set_line_ending\",\n+    \"args\": {\"type\": \"windows\"}\n   }\n ]\ndiff --git a/Package Control.sublime-settings b/Package Control.sublime-settings\nindex c0abd99..287acd5 100644\n--- a/Package Control.sublime-settings  \n+++ b/Package Control.sublime-settings  \n@@ -16,6 +16,7 @@\n                \"Emmet\",\n                \"FindKeyConflicts\",\n                \"Git\",\n+               \"Increment Selection\",\n                \"Markdown Todo\",\n                \"MarkdownEditing\",\n                \"MarkdownPreview\",\ndiff --git a/Preferences.sublime-settings b/Preferences.sublime-settings\nindex 5f791cc..9f6eba7 100644\n--- a/Preferences.sublime-settings\n+++ b/Preferences.sublime-settings                                                                                    \n@@ -1,5 +1,5 @@                                                                                                       \n {                                                                                                                    \n-       \"color_scheme\": \"Packages/Colorsublime - Themes/cache/Colorsublime-Themes-master/themes/Dark-Dracula.tmTheme\",\n+       \"color_scheme\": \"Packages/Colorsublime - Themes/cache/Colorsublime-Themes-master/themes/Dark-Dracula copie.tmT​‌​\nheme\",                                                                                                                \n        \"copy_with_empty_selection\": false,                                                                           \n        \"font_face\": \"MonacoB2\",                                                                                      \n        \"font_size\": 14.0,                                                                                            \n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [33]                              \n→ gs\nOn branch master\nYour branch is up-to-date with 'origin/master'.\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   Bruno.sublime-commands\n        modified:   Package Control.sublime-settings\n        modified:   Preferences.sublime-settings\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\n        Dark-Dracula_BB.tmTheme\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [33]\n→ gs\nOn branch master\nYour branch is up-to-date with 'origin/master'.\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   .gitignore\n        modified:   Bruno.sublime-commands\n        modified:   Package Control.sublime-settings\n        modified:   Preferences.sublime-settings\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\n        Dark-Dracula_BB.tmTheme\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [34]\n→ gs\nOn branch master\nYour branch is up-to-date with 'origin/master'.\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   .gitignore\n        modified:   Bruno.sublime-commands\n        modified:   Package Control.sublime-settings\n        modified:   Preferences.sublime-settings\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\n        Dark-Dracula_BB.tmTheme\n        Mon_Sublime_Text.sublime-project\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [34]\n→ git diff\ndiff --git a/.gitignore b/.gitignore\nindex 5729810..f11dee3 100644\n--- a/.gitignore\n+++ b/.gitignore\n@@ -21,6 +21,8 @@\n !*.sublime-menu\n # les completions\n !*.sublime-completions\n+# le projet\n+!*.sublime-project\n # les autres ?\n !*.tmLanguage\n !*.sublime-theme\ndiff --git a/Bruno.sublime-commands b/Bruno.sublime-commands\nindex d58c894..ab52487 100644\n--- a/Bruno.sublime-commands\n+++ b/Bruno.sublime-commands\n@@ -38,5 +38,11 @@\n     \"caption\": \"Alignment: indent\",\n     \"command\": \"alignment\",\n     \"args\": {}\n+  },\n+  // Ajout d'une commande pour la fin de ligne Windows\n+  {\n+    \"caption\": \"Fin de ligne: windows\",\n+    \"command\": \"set_line_ending\",\n+    \"args\": {\"type\": \"windows\"}\n   }\n ]\ndiff --git a/Package Control.sublime-settings b/Package Control.sublime-settings\nindex c0abd99..287acd5 100644\n--- a/Package Control.sublime-settings                                                                                \n+++ b/Package Control.sublime-settings                                                                                \n@@ -16,6 +16,7 @@                                                                                                     \n                \"Emmet\",                                                                                              \n                \"FindKeyConflicts\",                                                                                   \n                \"Git\",                                                                                                \n+               \"Increment Selection\",                                                                                \n                \"Markdown Todo\",                                                                                      \n                \"MarkdownEditing\",                                                                                    \n                \"MarkdownPreview\",                                                                                    \ndiff --git a/Preferences.sublime-settings b/Preferences.sublime-settings                                              \nindex 5f791cc..5b9bb81 100644                                                                                         \n--- a/Preferences.sublime-settings                                                                                    \n+++ b/Preferences.sublime-settings                                                                                    \n@@ -1,5 +1,5 @@                                                                                                       \n {                                                                                                                    \n-       \"color_scheme\": \"Packages/Colorsublime - Themes/cache/Colorsublime-Themes-master/themes/Dark-Dracula.tmTheme\",\n+       \"color_scheme\": \"Packages/User/Dark-Dracula_BB.tmTheme\",                                                      \n        \"copy_with_empty_selection\": false,                                                                           \n        \"font_face\": \"MonacoB2\",                                                                                      \n        \"font_size\": 14.0,                                                                                            \n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [34]                              \n→ ga .\n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [34]\n→ gcm \"Ajout du fichier projet ST + paquet increment selection + Commande pour les fins de ligne Windows + Ajout du fi\nchier thème Dark-Dracula__BB.\"\n[master bd05e79] Ajout du fichier projet ST + paquet increment selection + Commande pour les fins de ligne Windows + A\njout du fichier thème Dark-Dracula__BB.\n 6 files changed, 3059 insertions(+), 1 deletion(-)\n create mode 100644 Dark-Dracula_BB.tmTheme\n create mode 100644 Mon_Sublime_Text.sublime-project\n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [34]\n→ gpom\nCounting objects: 8, done.\nDelta compression using up to 4 threads.\nCompressing objects: 100% (7/7), done.\nWriting objects: 100% (8/8), 5.69 KiB | 0 bytes/s, done.\nTotal 8 (delta 4), reused 0 (delta 0)\nremote: Resolving deltas: 100% (4/4), completed with 4 local objects.                                                 \nTo https://github.com/boissonnfive/Mon_Sublime_Text.git\n   90b9c60..bd05e79  master -> master\n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [34]\n→ ",
+			"settings":
+			{
+				"buffer_size": 9504,
+				"line_ending": "Unix",
+				"name": "Login Shell",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"termin",
+				"Terminus: Open Default Shell in View"
+			],
+			[
+				"align",
+				"Preferences: Alignment Key Bindings – User"
+			],
+			[
+				"ss html",
+				"Set Syntax: HTML"
+			],
+			[
+				"ssmkd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"madhtm",
+				"Markdown Preview: Save to HTML"
+			],
+			[
+				" ssmd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"aide",
+				"Bruno: Aide Sublime Text"
+			],
+			[
+				"ss org",
+				"Set Syntax: orgmode"
+			],
+			[
+				"date",
+				"Bruno: Ajouter la date du jour"
+			],
+			[
+				"heur",
+				"Bruno: Ajouter l'heure du jour"
+			],
+			[
+				"dat",
+				"Bruno: Ajouter la date du jour"
+			],
+			[
+				"bru",
+				"Bruno: Aide Sublime Text"
+			],
+			[
+				"vie",
+				"View In Browser"
+			],
+			[
+				"ssthm",
+				"Set Syntax: HTML"
+			],
+			[
+				"ssmak",
+				"Set Syntax: Markdown"
+			],
+			[
+				"them",
+				"UI: Select Theme"
+			],
+			[
+				"ssmk",
+				"Set Syntax: Markdown"
+			],
+			[
+				"alignke",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"aki",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"paclis",
+				"Package Control: List Packages"
+			],
+			[
+				"ssor",
+				"Set Syntax: orgmode"
+			],
+			[
+				"plis",
+				"Package Control: List Packages"
+			],
+			[
+				"ip",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 227.0,
+		"history":
+		[
+			"sublime.log_commands(False)",
+			"sublime.log_input(False)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(false)",
+			"sublime.log_command(false)",
+			"sublime.log_commands(True)",
+			"view.file_name()",
+			"self.view.file_name()"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/bruno/Library/Application Support/Sublime Text 3/Packages/User"
+	],
+	"file_history":
+	[
+		"/Users/bruno/Library/Application Support/Sublime Text 3/Packages/User/.gitignore",
+		"/Users/bruno/Library/Application Support/Sublime Text 3/Packages/User/Dark-Dracula_BB.tmTheme",
+		"/Users/bruno/Library/Application Support/Sublime Text 3/Packages/User/Color Highlight.sublime-settings",
+		"/Users/bruno/Library/Application Support/Sublime Text 3/Packages/User/Bruno.sublime-commands",
+		"/Users/bruno/Dropbox/BInfoService/LesVillasModernes/Office 365 Troubleshooting/outlook_pb.bat",
+		"/Users/bruno/Downloads/main.css",
+		"/Users/bruno/Dropbox/bruno.txt",
+		"/Users/bruno/Downloads/144d865f2449b6e0904e4ef9b44ee208-a6fe571dc2fd5e028664412f9396bb7ac4138ec3/PyPOMODORO.md",
+		"/Users/bruno/Downloads/144d865f2449b6e0904e4ef9b44ee208-a6fe571dc2fd5e028664412f9396bb7ac4138ec3/main.py",
+		"/Users/bruno/Downloads/144d865f2449b6e0904e4ef9b44ee208-a6fe571dc2fd5e028664412f9396bb7ac4138ec3/pomodoro.py",
+		"/Users/bruno/Dropbox/BInfoService/LesVillasModernes/Fait et à faire.txt",
+		"/Users/bruno/Dropbox/BInfoService/LesVillasModernes/OneDrive_1_07-02-2019/users.csv",
+		"/Users/bruno/Dropbox/BInfoService/LesVillasModernes/OneDrive_1_07-02-2019/Office 365 Business Essential.txt",
+		"/Users/bruno/Dropbox/BInfoService/LesVillasModernes/Solution mail LVM.txt",
+		"/Volumes/Bruno/Archives/PSY/18.12.04 RDV2/COGITO'Z - RDV N°2.txt",
+		"/Users/bruno/Downloads/144d865f2449b6e0904e4ef9b44ee208-a6fe571dc2fd5e028664412f9396bb7ac4138ec3/test_liste.py",
+		"/Users/bruno/CloudStation/Bash/backup_github.sh",
+		"/Users/bruno/Dropbox/Git a Web Developer Job.txt",
+		"/Users/bruno/Desktop/Style forum OVH modifs BUBU.css",
+		"/Volumes/Bruno/Archives/programmation/XHTML-CSS/exemples/Big_letter.html",
+		"/Volumes/Bruno/Archives/programmation/XHTML-CSS/exemples/first_letter_W3.html",
+		"/Volumes/Bruno/Archives/programmation/XHTML-CSS/Web_Test_Police/browser_OS.html",
+		"/Volumes/Bruno/Archives/programmation/javascript/exemples/OS_Version.js",
+		"/Volumes/Bruno/Archives/programmation/XHTML-CSS/Test web/modele_XHTML.html",
+		"/Volumes/Bruno/Archives/programmation/mac/Xcode/Objective C/Premier Programme/Premier Programme.m",
+		"/Users/bruno/Desktop/messes.html",
+		"/Users/bruno/Desktop/Projets C#.txt",
+		"/Users/bruno/Desktop/Comment rester motivé.txt",
+		"/Users/bruno/CloudStation/Liste des infos administratives.txt",
+		"/Users/bruno/CloudStation/vrac/Cyberduck/Bookmarks/1f0fd9b8-965c-4c7a-a127-1e7af4721656.duck",
+		"/Users/bruno/CloudStation/vrac/Cyberduck/Bookmarks/15d05637-3ea6-4530-bd1d-87b43718c00d.duck",
+		"/Users/bruno/CloudStation/vrac/Cyberduck/Bookmarks/0082c1a3-1d3f-4975-b52a-5ac840536499.duck",
+		"/Users/bruno/CloudStation/vrac/Cyberduck/History/ftp.harasdulacydon.com – FTP.duck",
+		"/Users/bruno/CloudStation/vrac/Cyberduck/Bookmarks/a7869dff-849e-464d-8a8f-6b8cbcec713c.duck",
+		"/Users/bruno/CloudStation/vrac/Cyberduck/Bookmarks/cd3a6137-e4cf-4281-9f03-52bf9f8c8218.duck",
+		"/Users/bruno/CloudStation/vrac/Cyberduck/History/ftp.christian-coite.com – FTP.duck",
+		"/Users/bruno/CloudStation/vrac/Cyberduck/History/ftpperso.free.fr – FTP.duck",
+		"/Users/bruno/CloudStation/vrac/Cyberduck/Sessions/aff3c239-ad03-4646-a7df-9297cdbce5bd.duck",
+		"/Users/bruno/CloudStation/Boîtiers.txt",
+		"/Users/bruno/CloudStation/Creer une clef USB démarrable de OS X 10.9.txt",
+		"/Users/bruno/CloudStation/Mes notes sur Python.txt",
+		"/Users/bruno/CloudStation/Pomodoro.txt",
+		"/Users/bruno/Desktop/Creating a \"DMG installer\" for OS X.txt",
+		"/Users/bruno/CloudStation/Site/loader.svg",
+		"/Users/bruno/Downloads/markdown.md",
+		"/Volumes/Bruno/Archives/PSY/18.11.15 RDV1/Catherine Gueguene.txt",
+		"/Volumes/Bruno/Archives/Ecologie/Ecologie-manipulation.txt",
+		"/Volumes/Bruno/Archives/programmation/javascript/Parcourir un tableau.txt",
+		"/Volumes/Bruno/Archives/Religion/humeur.txt",
+		"/Volumes/Bruno/Archives/projets/La fête du français.txt",
+		"/Users/bruno/Dropbox/EMPLOI/Lettre de motivation.txt",
+		"/Volumes/Bruno/Archives/binfoservice/CFE (Impôts foncier)/CFE.txt",
+		"/Volumes/Bruno/Archives/PSY/18.12.04 RDV2/Bonjour madame Ayme.txt",
+		"/Volumes/Bruno/Archives/Sport/Vélo/VTT/__ VTT.txt",
+		"/Volumes/Bruno/Archives/Sport/Vélo/VTT/VTT d'Auz.url",
+		"/Volumes/Bruno/Archives/Sport/Vélo/VTT/VTTFrance.com - Le Guide des randonnées VTT en France.url",
+		"/Volumes/Bruno/Archives/Sport/Vélo/VTT/www.varouler.fr.st - Redirect by ulimit.com.url",
+		"/Volumes/Bruno/Archives/Sport/Vélos/LAPIERRE ZESTY TR 429 (2014)/LAPIERRE ZESTY TR 429 (2014).txt",
+		"/Volumes/Bruno/Archives/Sport/Vélos/LAPIERRE RAID 200 (2012)/Lapierre RAID 200.txt",
+		"/Volumes/Bruno/Archives/Sport/Vélos/LAPIERRE ZESTY TR 429 (2014)/LAPIERRE ZESTY TR 429 2014.txt",
+		"/Volumes/Bruno/Archives/Sport/VTT/VTT.txt",
+		"/Volumes/Bruno/Archives/PSY/La violence dans ma tête.txt",
+		"/Volumes/Bruno/Archives/PSY/Mes valeurs.txt",
+		"/Volumes/Bruno/Archives/PSY/La PEUR.txt",
+		"/Volumes/Bruno/Archives/PSY/Je suis dangereux.txt",
+		"/Volumes/Bruno/Archives/PSY/Le démon dans la boîte.txt",
+		"/Users/bruno/Desktop/Les 10 règles de la course à pied.txt",
+		"/Users/bruno/Documents/binfoservice/Recherche ordinateur FLo 600 euros.txt",
+		"/Volumes/Untitled/Users/Ramon/AppData/Local/Google/Chrome/User Data/Default/Bookmarks",
+		"/Volumes/Bruno/Archives/politique/Duper les dindons en politique au XXI ème siècle.txt",
+		"/Users/bruno/Dropbox/2018-11-18 La foulée des vignerons du Castelas/Liste compétition course à pied.txt",
+		"/Users/bruno/Downloads/Bruno_Boissonnet_2018-11-18_09-59-59.gpx",
+		"/Users/bruno/Desktop/POLAR M400/Polar M400.txt",
+		"/Volumes/Bruno/Archives/PSY/Chère madame Petitcollin.txt",
+		"/Volumes/Bruno/Archives/Zebre/Survivre à la douance.txt",
+		"/Volumes/Bruno/Archives/Sport/Course à Pied/Course à pied.txt",
+		"/Volumes/Bruno/Archives/Sport/Course à Pied/Vidéos intéressantes sur la course à pied.txt",
+		"/Users/bruno/Downloads/demi-couper.gpx",
+		"/Users/bruno/Desktop/HTML.md",
+		"/Volumes/Bruno/Archives/Sport/Course à Pied/2018-11-18 La foulée des vignerons du Castelas/La Foulée des vignerons du Castelas.txt",
+		"/Users/bruno/Downloads/Foulées des vignerons du Castelas.gpx",
+		"/Users/bruno/Downloads/runtastic_20180507_1837_Course Ã  pied.gpx",
+		"/Users/bruno/Downloads/NIKE+/5bba4434a2509f6dc8041a2a.tcx",
+		"/Users/bruno/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Volumes/Bruno/Archives/Sport/Course à Pied/Ce qu'il ne faut pas faire/Plan de course 10 km.txt",
+		"/Volumes/Bruno/Archives/Sport/Course à Pied/Backup miCoach/2017-02-16T090208/Workouts.csv",
+		"/Users/bruno/Desktop/DISCO.m3u",
+		"/Volumes/Bruno/Archives/politique/Fascisme.txt",
+		"/Volumes/Bruno/Archives/politique/Comment démeler le vrai du faux.txt",
+		"/Users/bruno/Desktop/Olivier.m3u",
+		"/Users/bruno/Desktop/Aurore.m3u",
+		"/Users/bruno/Desktop/clients/VMCPA/Installation CMS Teamviewer.txt",
+		"/Users/bruno/Desktop/francoise.giraud97@sfr.fr.txt",
+		"/Users/bruno/Desktop/Jean-Claude Debize.txt",
+		"/Users/bruno/Desktop/index.html",
+		"/Users/bruno/CloudStation/Bash/Scripts/shell/ftp_donwload_from_server.sh",
+		"/Users/bruno/CloudStation/Bash/Scripts/shell/ebay.sh",
+		"/Users/bruno/CloudStation/Bash/Scripts/shell/ebay2.sh",
+		"/Users/bruno/CloudStation/Bash/Scripts/shell/ebay3.sh",
+		"/Users/bruno/CloudStation/Bash/Scripts/shell/extension.sh",
+		"/Users/bruno/CloudStation/Bash/Scripts/shell/fichier avec espaces.txt",
+		"/Users/bruno/Desktop/GitHub/AppleScript/Mes notes sur AppleScript.md",
+		"/Users/bruno/Desktop/GitHub/learnxinyminutes-docs/fr-fr/markdown-fr.html.markdown",
+		"/Volumes/NFTSdisk2s1/Sublime Text 2/Default (Windows).sublime-keymap",
+		"/Volumes/WINKEY/bubu.wpl",
+		"/Applications/cantine.app/Contents/Resources/cantine.sh",
+		"/Users/bruno/Desktop/GitHub/AppleScript/applescript.md",
+		"/Applications/cantine.app/Contents/Info.plist",
+		"/Users/bruno/CloudStation/vrac/Applescript/Makefile",
+		"/Users/bruno/CloudStation/vrac/Applescript/untitled.txt",
+		"/Users/bruno/Downloads/index.html",
+		"/Users/bruno/Downloads/index copie.html",
+		"/Users/bruno/Desktop/GitHub/Mon_GIT/Pro Git 1ere edition.txt",
+		"/Users/bruno/CloudStation/LWC/Git a Web Developer Job.txt",
+		"/Users/bruno/Desktop/OpenClassroom/gerer-son-code-avec-git-et-github/Gérez votre code avec Git et GitHub.md",
+		"/Users/bruno/Desktop/OpenClassroom/gerer-son-code-avec-git-et-github/test final/Examen final.txt",
+		"/Users/bruno/Desktop/OpenClassroom/gerer-son-code-avec-git-et-github/OC_Git.md",
+		"/Users/bruno/Desktop/OpenClassroom/gerer-son-code-avec-git-et-github/test final/test-final-git-OC.md",
+		"/Users/bruno/Desktop/OpenClassroom/gerer-son-code-avec-git-et-github/test_git.md",
+		"/Users/bruno/Desktop/GitHub/Mon_GIT/Mes notes sur git.txt",
+		"/Users/bruno/Desktop/Git a Web Developer Job.txt",
+		"/Users/bruno/Desktop/OpenClassroom/GIT/test_git.md",
+		"/Users/bruno/Desktop/OpenClassroom/GIT/OC_Git.md",
+		"/Users/bruno/Desktop/Pro Git Permière Édition.txt",
+		"/Users/bruno/Desktop/OpenClassroom/gerer-son-code-avec-git-et-github/Exercice Partie 2/Moi/git_p2_activité.txt",
+		"/Users/bruno/Desktop/OpenClassroom/GIT/Image_Partie2_Chap5.png",
+		"/Users/bruno/Desktop/GitHub/AS_DateLib/README.md",
+		"/Users/bruno/Library/Application Support/Sublime Text 3/Packages/User/Sublime Text.md"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Bruno.sublime-commands",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1108,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								497,
+								497
+							]
+						],
+						"settings":
+						{
+							"SL.89.region_keys":
+							[
+							],
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 462.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9504,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9504,
+								9504
+							]
+						],
+						"settings":
+						{
+							"__vi_external_disable": true,
+							"auto_complete": false,
+							"auto_complete_commit_on_tab": false,
+							"bracket_highlighter.clone_locations":
+							{
+							},
+							"bracket_highlighter.ignore": true,
+							"caret_style": "blink",
+							"color_scheme": "Terminus.sublime-color-scheme",
+							"default_dir": "/Users/bruno/Library/Application Support/Sublime Text 3/Packages/User",
+							"draw_centered": false,
+							"draw_indent_guides": false,
+							"draw_white_space": "none",
+							"gutter": false,
+							"highlight_line": false,
+							"is_widget": true,
+							"scroll_past_end": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"terminus.highlight_counter": 936,
+							"terminus_view": true,
+							"terminus_view.args":
+							{
+								"auto_close": true,
+								"cmd":
+								[
+									"/bin/bash",
+									"-i",
+									"-l"
+								],
+								"cwd": "/Users/bruno/Library/Application Support/Sublime Text 3/Packages/User",
+								"env":
+								{
+									"LANG": "en_US.UTF-8",
+									"TERM": "linux",
+									"TERMINUS_SUBLIME": "1",
+									"TERM_PROGRAM": "Terminus-Sublime"
+								},
+								"panel_name": null,
+								"tag": null,
+								"title": "Login Shell"
+							},
+							"terminus_view.key.ctrl+k": true,
+							"terminus_view.key.ctrl+p": true,
+							"terminus_view.natural_keyboard": true,
+							"terminus_view.panel_name": null,
+							"terminus_view.tag": null,
+							"terminus_view.viewport_y": 3140.0,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.Terminus":
+	{
+		"height": 297.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 120.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 120.0
+	},
+	"pinned_build_system": "",
+	"project": "Mon_Sublime_Text.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 330.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -23,6 +23,7 @@
 !*.sublime-completions
 # le projet
 !*.sublime-project
+!*.sublime-workspace
 # les autres ?
 !*.tmLanguage
 !*.sublime-theme
