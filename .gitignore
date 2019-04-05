@@ -21,6 +21,8 @@
 !*.sublime-menu
 # les completions
 !*.sublime-completions
+# le projet
+!*.sublime-project
 # les autres ?
 !*.tmLanguage
 !*.sublime-theme

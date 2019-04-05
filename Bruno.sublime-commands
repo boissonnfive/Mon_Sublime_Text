@@ -38,5 +38,11 @@
     "caption": "Alignment: indent",
     "command": "alignment",
     "args": {}
+  },
+  // Ajout d'une commande pour la fin de ligne Windows
+  {
+    "caption": "Fin de ligne: windows",
+    "command": "set_line_ending",
+    "args": {"type": "windows"}
   }
 ]
