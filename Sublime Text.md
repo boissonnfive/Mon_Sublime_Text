@@ -1,5 +1,7 @@
 # Sublime Text
 
+![Sublime Text 3 Logo](ST3_Logo.png)
+
 Mes notes sur Sublime Text.
 
 ## Table des matières
