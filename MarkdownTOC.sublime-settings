@@ -1,0 +1,11 @@
+{
+  "defaults": {
+    "autolink": true,
+    "levels": [1,2],
+    "link_prefix": "user-content-",
+    "uri_encoding": false,
+    "lowercase": "all"
+  }
+}
+
+

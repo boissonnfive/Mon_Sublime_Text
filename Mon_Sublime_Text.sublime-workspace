@@ -53,13 +53,31 @@
 			}
 		},
 		{
-			"contents": "< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [32]\n→ gs\nOn branch master\nYour branch is up-to-date with 'origin/master'.\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   Bruno.sublime-commands\n        modified:   Package Control.sublime-settings\n        modified:   Preferences.sublime-settings\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [32]\n→ git diff\ndiff --git a/Bruno.sublime-commands b/Bruno.sublime-commands\nindex d58c894..ab52487 100644\n--- a/Bruno.sublime-commands\n+++ b/Bruno.sublime-commands\n@@ -38,5 +38,11 @@\n     \"caption\": \"Alignment: indent\",\n     \"command\": \"alignment\",\n     \"args\": {}\n+  },\n+  // Ajout d'une commande pour la fin de ligne Windows\n+  {\n+    \"caption\": \"Fin de ligne: windows\",\n+    \"command\": \"set_line_ending\",\n+    \"args\": {\"type\": \"windows\"}\n   }\n ]\ndiff --git a/Package Control.sublime-settings b/Package Control.sublime-settings\nindex c0abd99..287acd5 100644\n--- a/Package Control.sublime-settings  \n+++ b/Package Control.sublime-settings  \n@@ -16,6 +16,7 @@\n                \"Emmet\",\n                \"FindKeyConflicts\",\n                \"Git\",\n+               \"Increment Selection\",\n                \"Markdown Todo\",\n                \"MarkdownEditing\",\n                \"MarkdownPreview\",\ndiff --git a/Preferences.sublime-settings b/Preferences.sublime-settings\nindex 5f791cc..9f6eba7 100644\n--- a/Preferences.sublime-settings\n+++ b/Preferences.sublime-settings                                                                                    \n@@ -1,5 +1,5 @@                                                                                                       \n {                                                                                                                    \n-       \"color_scheme\": \"Packages/Colorsublime - Themes/cache/Colorsublime-Themes-master/themes/Dark-Dracula.tmTheme\",\n+       \"color_scheme\": \"Packages/Colorsublime - Themes/cache/Colorsublime-Themes-master/themes/Dark-Dracula copie.tmT​‌​\nheme\",                                                                                                                \n        \"copy_with_empty_selection\": false,                                                                           \n        \"font_face\": \"MonacoB2\",                                                                                      \n        \"font_size\": 14.0,                                                                                            \n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [33]                              \n→ gs\nOn branch master\nYour branch is up-to-date with 'origin/master'.\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   Bruno.sublime-commands\n        modified:   Package Control.sublime-settings\n        modified:   Preferences.sublime-settings\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\n        Dark-Dracula_BB.tmTheme\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [33]\n→ gs\nOn branch master\nYour branch is up-to-date with 'origin/master'.\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   .gitignore\n        modified:   Bruno.sublime-commands\n        modified:   Package Control.sublime-settings\n        modified:   Preferences.sublime-settings\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\n        Dark-Dracula_BB.tmTheme\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [34]\n→ gs\nOn branch master\nYour branch is up-to-date with 'origin/master'.\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git checkout -- <file>...\" to discard changes in working directory)\n\n        modified:   .gitignore\n        modified:   Bruno.sublime-commands\n        modified:   Package Control.sublime-settings\n        modified:   Preferences.sublime-settings\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\n        Dark-Dracula_BB.tmTheme\n        Mon_Sublime_Text.sublime-project\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [34]\n→ git diff\ndiff --git a/.gitignore b/.gitignore\nindex 5729810..f11dee3 100644\n--- a/.gitignore\n+++ b/.gitignore\n@@ -21,6 +21,8 @@\n !*.sublime-menu\n # les completions\n !*.sublime-completions\n+# le projet\n+!*.sublime-project\n # les autres ?\n !*.tmLanguage\n !*.sublime-theme\ndiff --git a/Bruno.sublime-commands b/Bruno.sublime-commands\nindex d58c894..ab52487 100644\n--- a/Bruno.sublime-commands\n+++ b/Bruno.sublime-commands\n@@ -38,5 +38,11 @@\n     \"caption\": \"Alignment: indent\",\n     \"command\": \"alignment\",\n     \"args\": {}\n+  },\n+  // Ajout d'une commande pour la fin de ligne Windows\n+  {\n+    \"caption\": \"Fin de ligne: windows\",\n+    \"command\": \"set_line_ending\",\n+    \"args\": {\"type\": \"windows\"}\n   }\n ]\ndiff --git a/Package Control.sublime-settings b/Package Control.sublime-settings\nindex c0abd99..287acd5 100644\n--- a/Package Control.sublime-settings                                                                                \n+++ b/Package Control.sublime-settings                                                                                \n@@ -16,6 +16,7 @@                                                                                                     \n                \"Emmet\",                                                                                              \n                \"FindKeyConflicts\",                                                                                   \n                \"Git\",                                                                                                \n+               \"Increment Selection\",                                                                                \n                \"Markdown Todo\",                                                                                      \n                \"MarkdownEditing\",                                                                                    \n                \"MarkdownPreview\",                                                                                    \ndiff --git a/Preferences.sublime-settings b/Preferences.sublime-settings                                              \nindex 5f791cc..5b9bb81 100644                                                                                         \n--- a/Preferences.sublime-settings                                                                                    \n+++ b/Preferences.sublime-settings                                                                                    \n@@ -1,5 +1,5 @@                                                                                                       \n {                                                                                                                    \n-       \"color_scheme\": \"Packages/Colorsublime - Themes/cache/Colorsublime-Themes-master/themes/Dark-Dracula.tmTheme\",\n+       \"color_scheme\": \"Packages/User/Dark-Dracula_BB.tmTheme\",                                                      \n        \"copy_with_empty_selection\": false,                                                                           \n        \"font_face\": \"MonacoB2\",                                                                                      \n        \"font_size\": 14.0,                                                                                            \n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [34]                              \n→ ga .\n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [34]\n→ gcm \"Ajout du fichier projet ST + paquet increment selection + Commande pour les fins de ligne Windows + Ajout du fi\nchier thème Dark-Dracula__BB.\"\n[master bd05e79] Ajout du fichier projet ST + paquet increment selection + Commande pour les fins de ligne Windows + A\njout du fichier thème Dark-Dracula__BB.\n 6 files changed, 3059 insertions(+), 1 deletion(-)\n create mode 100644 Dark-Dracula_BB.tmTheme\n create mode 100644 Mon_Sublime_Text.sublime-project\n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [34]\n→ gpom\nCounting objects: 8, done.\nDelta compression using up to 4 threads.\nCompressing objects: 100% (7/7), done.\nWriting objects: 100% (8/8), 5.69 KiB | 0 bytes/s, done.\nTotal 8 (delta 4), reused 0 (delta 0)\nremote: Resolving deltas: 100% (4/4), completed with 4 local objects.                                                 \nTo https://github.com/boissonnfive/Mon_Sublime_Text.git\n   90b9c60..bd05e79  master -> master\n< bruno@MBP-de-Bruno > : ~/Library/Application Support/Sublime Text 3/Packages/User [34]\n→ ",
+			"file": ".gitignore",
 			"settings":
 			{
-				"buffer_size": 9504,
+				"buffer_size": 589,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "< bruno@MBP-de-Bruno > : ~/Library/Application Support/S​‌​\nublime Text 3/Packages/User [34]\n→ ",
+			"settings":
+			{
+				"buffer_size": 95,
 				"line_ending": "Unix",
 				"name": "Login Shell",
 				"scratch": true
+			}
+		},
+		{
+			"file": "Sublime Text.md",
+			"settings":
+			{
+				"buffer_size": 16121,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -330,7 +348,7 @@
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 29.0
 	},
 	"find_in_files":
 	{
@@ -377,8 +395,8 @@
 						"selection":
 						[
 							[
-								497,
-								497
+								657,
+								657
 							]
 						],
 						"settings":
@@ -386,37 +404,391 @@
 							"SL.89.region_keys":
 							[
 							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										674,
+										675
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										655,
+										656
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										674,
+										675
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										655,
+										656
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
 							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 462.0,
+						"translation.y": 191.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 1,
+					"file": ".gitignore",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9504,
+						"buffer_size": 589,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9504,
-								9504
+								337,
+								337
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 95,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								95,
+								95
 							]
 						],
 						"settings":
@@ -439,7 +811,8 @@
 							"is_widget": true,
 							"scroll_past_end": true,
 							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"terminus.highlight_counter": 936,
+							"tab_size": 2,
+							"terminus.highlight_counter": 4,
 							"terminus_view": true,
 							"terminus_view.args":
 							{
@@ -467,11 +840,217 @@
 							"terminus_view.natural_keyboard": true,
 							"terminus_view.panel_name": null,
 							"terminus_view.tag": null,
-							"terminus_view.viewport_y": 3140.0,
+							"terminus_view.viewport_y": 0.0,
+							"translate_tabs_to_spaces": true,
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3140.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Sublime Text.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16121,
+						"regions":
+						{
+							"col_40E0D0FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										7915,
+										7924
+									]
+								],
+								"scope": "col_40E0D0FF"
+							}
+						},
+						"selection":
+						[
+							[
+								14136,
+								14136
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										14350,
+										14351
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/square_bracket.png",
+										"region.bluish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										14028,
+										14029
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/MarkdownEditing/Markdown.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5491.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -482,7 +1061,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 29.0
 	},
 	"input":
 	{
@@ -542,7 +1121,7 @@
 	"project": "Mon_Sublime_Text.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":

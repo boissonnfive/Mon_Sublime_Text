@@ -2,6 +2,17 @@
 
 Mes paramètres, mes notes et mes codes pour Sublime Text.
 
+## Table des matières
+
+<!-- MarkdownTOC -->
+
+- [Les fichiers](#user-content-les-fichiers)
+- [Mettre ses paramètres ST sur GitHub](#user-content-mettre-ses-paramètres-st-sur-github)
+- [Installer ses paramètres après une nouvelle installation de ST](#user-content-installer-ses-paramètres-après-une-nouvelle-installation-de-st)
+
+<!-- /MarkdownTOC -->
+
+
 ## Les fichiers
 
 - __Batch File.tmLanguage__ : ma modif du langage Batch.

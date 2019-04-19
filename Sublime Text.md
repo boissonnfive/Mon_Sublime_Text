@@ -1,5 +1,23 @@
 # Sublime Text
 
+Mes notes sur Sublime Text.
+
+## Table des matières
+
+<!-- MarkdownTOC -->
+
+- [Présentation](#user-content-présentation)
+- [Les raccourcis que j'utilise](#user-content-les-raccourcis-que-jutilise)
+- [Les astuces](#user-content-les-astuces)
+- [Créer une commande dans Sublime Text](#user-content-créer-une-commande-dans-sublime-text)
+- [Ma config](#user-content-ma-config)
+- [Mes Modifications](#user-content-mes-modifications)
+- [Liste des exigences pour un module Markdown](#user-content-liste-des-exigences-pour-un-module-markdown)
+- [Liens intéressants](#user-content-liens-intéressants)
+
+<!-- /MarkdownTOC -->
+
+
 ## Présentation
 
 C'est un éditeur que j'utilise pour écrire des notes (principalement en Markdown). Je voudrais bien le maîtriser aussi bien que TextMate avec lequel je sais bien coder en HTML/CSS/PHP.
@@ -12,7 +30,7 @@ Pour obtenir les raccourcis sur mac, il faut remplacer Ctrl par ⌘, sauf quand 
 **Si on ne doit retenir qu'un seul raccourci, c'est celui de la palette de commande : ⌘ ⇧ P**
 
 
-### Génériques ###
+### Génériques
 
 - Passer en majuscule                                       : ⌘ K U
 - Passer en minuscule                                       : ⌘ K L
@@ -32,7 +50,7 @@ Pour obtenir les raccourcis sur mac, il faut remplacer Ctrl par ⌘, sauf quand 
 - Sélectionner X lignes pour avoir X curseurs               : ⌘ ⇧ L
 
 
-### Programmation ###
+### Programmation
 
 - Aller à la ligne, quand on est au milieu de la ligne avec : ⌘  ↩
 - Insérer un bout de code (snippet)                         : raccourci   ⇥
@@ -49,7 +67,7 @@ Pour obtenir les raccourcis sur mac, il faut remplacer Ctrl par ⌘, sauf quand 
 - Sélectionner le langage                                   : ⌘ ⇧ P ss langage
 
 
-### Markdown ###
+### Markdown
 
 - Augmenter le niveau d'un titre (MarkdownEditing)          : # sur sélection
 - Mettre en gras                 (MarkdownEditing)          : ⌘ ⌥ B
@@ -64,7 +82,7 @@ Pour obtenir les raccourcis sur mac, il faut remplacer Ctrl par ⌘, sauf quand 
 - [2]: nécessite le module *Alignment*
 
 
-### C/C++ ###
+### C/C++
 
 - Compiler le fichier (créer un fichier .exe)                  : ⌘ B
 - Lancer le fichier (la sortie est affichée dans Sublime Text) : ⌘ ⇧ B
@@ -74,7 +92,7 @@ Pour obtenir les raccourcis sur mac, il faut remplacer Ctrl par ⌘, sauf quand 
 
 ## Les astuces
 
-### Créer un projet ###
+### Créer un projet
 
 1. Mettre tous les fichiers de son projet dans un dossier
 1. Ajouter ce dossier à votre projet (qui va ainsi être créé): **Project > Add Folder to Project…** (Les fichiers du dossier doivent maintenant apparaître dans la barre latérale)
@@ -84,20 +102,20 @@ Pour obtenir les raccourcis sur mac, il faut remplacer Ctrl par ⌘, sauf quand 
         your_project.sublime-workspace
 
 
-### Ouvrir un fichier en hexadécimal ###
+### Ouvrir un fichier en hexadécimal
 
 1. Menu File > Reopen with Encoding
 2. Hexadecimal
 
 
-### Les dossiers de configuration ###
+### Les dossiers de configuration
 
 - Windows : %APPDATA%\Sublime Text 3
 - OS X    : ~/Library/Application Support/Sublime Text 3
 - Linux   : ~/.config/sublime-text-3
 
 
-### Taper des commandes python ###
+### Taper des commandes python
 
 Aller dans la console (Ctrl+ù) ou View -> Show Console et taper :
 
@@ -179,13 +197,14 @@ Sur un clavier AZERTY, il est impossible de taper le raccourci "ctrl+`". Pour af
 
 ## Ma config
 
-### Paquets installés (28) ###
+### Paquets installés (29)
 
 [*Remarque : ⌘ + ⇧ + P (command palette) + list package*]
 
 - **A File Icon**           : Ensemble d'icônes pour Sublime Text
 - **Alignment**             : Aligne le texte selon : ou =
 - **AutoFileName**          : Insére un nom de fichier automatiquement
+- **BracketHiglighter**     : Indique les parenthèses, crochets, accolades, etc.
 - **Color Highlight**       : Affiche la couleur d'une valeur dans le CSS
 - **ColorPicker**           : Affiche une dialogue de sélection de couleur
 - **Colorsublime**          : 
@@ -193,7 +212,9 @@ Sur un clavier AZERTY, il est impossible de taper le raccourci "ctrl+`". Pour af
 - **DocBlockr**             : Insére un bloc de commentaire de type JavaDoc
 - **Emmet**                 : offre des raccourcis pour le HTML et le CSS
 - **FindKeyConflicts**      : Recherche les raccourcis associés à plusieurs paquets
+- **Gist**                  : Crée un nouveau gist à partir du texte sélectionné
 - **Git**                   : Affiche le statut git dans la barre d'état
+- **Increment Selection**   : Incrémente le texte sélectionné
 - **MarkdownEditing**       : Affiche la coloration syntaxique du Markdown
 - **MarkdownPreview**       : Affiche le document Markdown dans un navigateur
     + Markdown Preview: Preview in Browser (⌥ M)
@@ -201,12 +222,14 @@ Sur un clavier AZERTY, il est impossible de taper le raccourci "ctrl+`". Pour af
     + Markdown Preview: Copy to Clipboard
     + Markdown Preview: Open Markdown Cheat sheet
     + Permet d'utiliser son propre modèle HTML
+- **MarkdownTOC**           : Insère une table des matières dans un fichier MD
 - **MarkdownTodo**   : ajoute des commandes sur les tâches (*Seulement sur ST2*)
 - **Material Theme** : installe un thème sombre et bleu turquoise
 - **orgmode**        : pour faire du orgmode dans Sublime Text
     + "-c"+tab         : crée une liste non cochée
     + Entrer           : coche la case à cocher
 - **Package Control** : installateur de paquets pour Sublime Text
+- **PlainTask**       : Gestionnaire de tâches en mode texte
 - **PowerShell**      : 
 - **PyV8**            :
 - **Settings**        :
@@ -217,21 +240,32 @@ Sur un clavier AZERTY, il est impossible de taper le raccourci "ctrl+`". Pour af
     + Augmente/Diminue le niveau des titres (⌘ ⇧ ; / ⌘ ⇧ ,)
     + Continuation des listes après appuis sur ↩
     + Tableaux intelligents (⇥)
+- **StringEncode**    : Transforme les caractères en entités HTML (& => &amp;)
 - **SublimeLinter**   : Signale les erreurs dans le code
 - **SublimeServer**   : Lance un serveur HTTP
-- **Terminus**        : Affiche le Terminal dans Sublime Text (un panneau en bas)
+- **Terminus**        : Affiche le Terminal dans Sublime Text
+- **Theme - TwoDark** : Inspiré du thème OneDark pour Atom
 - **UnicodeNormalizer**   : Transforme un fichier UTF-8 en Unicode Normalization Form C (pour la validation W3C)
 - **VBScript**            : affiche la coloration syntaxique du VBScript + snippets
 - **View In Browser**     : Affiche le contenu du fichier dans un navigateur
+- **W3CValidator**        : Valide les fichiers HTML/CSS avec l'outil du W3C
 - **zzz A File Icon zzz** : Ensemble d'icônes pour Sublime Text (modifié pour le Material Theme)
+
+### Mes thèmes et colorscheme
+
+- **TwoDark**        : thème (mon dernier préféré)
+- **DRACULA**        : colorscheme (je l'ai mis à ma sauce)
+- **SpaceGray**      : colorscheme
+- **Material theme** :  thème
+
 
 ## Mes Modifications
 
 ### Complétion
 
-source : <http://docs.sublimetext.info/en/latest/reference/completions.html>
+[Source](http://docs.sublimetext.info/en/latest/reference/completions.html)
 
-(voir mon fichier Bruno.sublime-completions)
+_(voir mon fichier Bruno.sublime-completions)_
 
 ### Première lettre en majuscule ###
 
@@ -253,7 +287,7 @@ source : <http://docs.sublimetext.info/en/latest/reference/completions.html>
         { "keys": ["super+k", "super+t"], "command": "title_case" }
 
 
-### C/C++ ###
+### C/C++
 
 - but          : Lancer le programme dans l'invite de commande sous Windows
 - fichier      : C++.sublime-build
@@ -265,7 +299,7 @@ source : <http://docs.sublimetext.info/en/latest/reference/completions.html>
         }
 
 
-### Markdown Preview ###
+### Markdown Preview
 
 - but          : Créer un raccourci pour l'aperçu dans le navigateur
 - fichiers     : Default (Windows).sublime-keymap, Default (OSX).sublime-keymap
@@ -286,7 +320,7 @@ source : <http://docs.sublimetext.info/en/latest/reference/completions.html>
         "markdown_filetypes": [".md", ".markdown", ".mdown", ".txt"],
 
 
-### Markdown Editing ###
+### Markdown Editing
 
 - but          : ajouter les dièses à la fin des titres
 - fichiers     : "Markdown (Standard).sublime-settings", "Markdown.sublime-settings", "MultiMarkdown.sublime-settings", 
@@ -310,7 +344,7 @@ source : <http://docs.sublimetext.info/en/latest/reference/completions.html>
         ],
 
 
-### VBScript ###
+### VBScript
 
 - but          : Lancer le script en mode fenêtre (WScript)
 - fichiers     : VBScript.sublime-build 
@@ -336,7 +370,7 @@ source : <http://docs.sublimetext.info/en/latest/reference/completions.html>
         "cmd": [ "cscript.exe", "$file" ],
         "encoding": "cp1252"
 
-### Mes préférences ###
+### Mes préférences
 
 Je n'utilise pas la même police ni le même thème sur Windows et mac; donc les fichiers Preferences.sublime-settings sont différents.
 
@@ -385,6 +419,20 @@ Je n'utilise pas la même police ni le même thème sur Windows et mac; donc les
 
 
 
+
+## Liste des exigences pour un module Markdown
+
+- 1 raccourci pour créer un titre
+- 1 raccourci pour augmenter/réduire le niveau d'un titre
+- Coloration syntaxique des titres
+- Gestion des listes :
+  - Quand on appuie sur "Entrer" à la fin d'un composant d'une liste, une puce est ajoutée en début de ligne
+  - Coloration syntaxique de la liste
+  - Gestion des listes imbriquées : si on fait un tab sur une liste, cela devient une liste imbriquée
+- fdddf
+- Aperçu
+- Aperçu dans un navigateur
+- Transforme en HTML
 
 
 
