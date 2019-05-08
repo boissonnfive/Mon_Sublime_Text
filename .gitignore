@@ -1,6 +1,7 @@
  # Tout ignorer sauf le fichier .gitignore
 *
 !.gitignore
+Gist.sublime-settings
 
 # Garder aussi ...
 # Mes notes

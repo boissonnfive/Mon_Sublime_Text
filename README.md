@@ -25,7 +25,7 @@ Mes paramètres, mes notes et mes codes pour Sublime Text.
 - __Color Highlight.sublime-settings__ : config « Color Highlight »
 - __Dark-Dracula_BB.tmTheme__ : Mes modifs du theme Dark-Dracula
 - __Default (XX).sublime.keymap__ : mes propres raccourcis clavier.
-- __Gist.sublime-settings__ : config Gist
+- __Gist.sublime-settings__ : config Gist (à ne pas mettre sous GitHub)
 - __HTML-Template.sublime-snippet__ : Snippet pour créer un squelette de fichier HTML.
 - __Markdown (Standard).sublime-settings__ : config MarkdownEditing.
 - __MarkdownPreview.sublime-settings__ : config MarkdownPreview.
