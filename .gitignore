@@ -1,7 +1,7 @@
  # Tout ignorer sauf le fichier .gitignore
 *
 !.gitignore
-Gist.sublime-settings
+
 
 # Garder aussi ...
 # Mes notes
@@ -31,6 +31,7 @@ Gist.sublime-settings
 !*.tmTheme
 !ST3_Logo.png
 
+Gist.sublime-settings
 
 # OS generated files #
 ######################
