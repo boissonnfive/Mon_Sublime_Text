@@ -18,7 +18,8 @@ import sublime, sublime_plugin, datetime, locale
 class BrunoInsereDateCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         loc = locale.getlocale(locale.LC_ALL) # get current locale
-        locale.setlocale(locale.LC_ALL,'fr_FR')
+        # locale.setlocale(locale.LC_ALL,'fr_FR') # Fonctionne sur mac OS
+        locale.setlocale(locale.LC_ALL,'french') # Fonctionne sur Windows 10
         self.view.run_command("insert_snippet", { "contents": "%s" %datetime.date.today().strftime("%A %d %B %Y") })
         locale.setlocale(locale.LC_ALL, loc) # restore saved locale
 
