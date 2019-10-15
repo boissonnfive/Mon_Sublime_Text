@@ -1,3 +1,8 @@
 {
-	"browser": "/Applications/Firefox.app"
+    // Indique le navigateur dans lequel on va afficher
+    // l'aperçu du fichier MarkDown
+    // Config MacOS
+	// "browser": "/Applications/Firefox.app"
+    // Config Windows
+    "browser": "Firefox.exe"
 }
