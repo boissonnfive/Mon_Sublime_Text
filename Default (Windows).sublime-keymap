@@ -1,84 +1,109 @@
 [
 
-	// --------------------------------------------------------------------------------
-	// Général	
-	// Pour mettre en majuscule la première lettre du mot sous le curseur
-	
-	{ "keys": ["ctrl+k", "ctrl+q"], "command": "title_case" },
+    // --------------------------------------------------------------------------------
+    // Général
+    // Pour mettre en majuscule la première lettre du mot sous le curseur
+
+    { "keys": ["ctrl+k", "ctrl+q"], "command": "title_case" },
+
+    // Console : Modification du raccourci pour afficher la console : Ctrl + ù
+    // (au lieu de Ctrl + ` qui ne fonctionne pas sur un clavier Fr)
+
+    { "keys": ["ctrl+ù"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
 
-	// --------------------------------------------------------------------------------
-	// Mardown Preview : pour afficher un aperçu du fichier markdown dans un navigateur
+    // Pour réindenter le code
 
-	{ "keys": ["alt+m"], "command": "markdown_preview", "args": { "target": "browser", "parser":"markdown" } },
+    { "keys": ["super+shift+r"], "command": "bruno_selectionne_tout_et_reindente" },
 
-
-	// --------------------------------------------------------------------------------
-	// MarkdownTodo : redéfinition des raccourcis pour ne pas rentrer en conflit avec
-	// les raccourcis par défaut de Sublime Text 2
-
-	{ "keys": ["ctrl+alt+c"], "command": "cocher" },
-    { "keys": ["ctrl+alt+n"], "command": "nouveau" },
 
     // --------------------------------------------------------------------------------
-	// add_date.py (à ajouter dans le paquet "User") : pour insérer la date du jour au
-	// format : Nom_du_jour Numéro_de_jour Nom_du_mois Année
-	// ex : Mardi 15 Octobre 2015 
-	
-	{"keys": ["super+alt+d"], "command": "add_date" }, 
-	{"keys": ["super+alt+t"], "command": "add_time" } 
+    // Mardown Preview : pour afficher un aperçu du fichier markdown dans un navigateur
+
+    { "keys": ["alt+m"], "command": "markdown_preview", "args": { "target": "browser", "parser":"markdown" } },
+
 
     // --------------------------------------------------------------------------------
-	// Config pour modifier la disposition des écrans :
-	//     - ctrl+alt+left     : divise les 2 écrans en 1/3,2/3
-	//     - ctrl+alt+right    : divise les 2 écrans en 2/3,1/3
-	//     - ctrl+alt+up       : divise les 2 écrans en 50/50
-	//     - ctrl+alt+down     : ne garde qu'un écran
-	//     - ctrl+shift+left   : déplace le fichier actif dans l'écran de gauche
-	//     - ctrl+shift+right  : déplace le fichier actif dans l'écran de droite
+    // bruno_tache.py : pour insérer une nouvelle tâche et la terminer.
+    // ex : - [ ] Faire le ménage   =>   - [X] Faire le ménage
 
-	/*{
-		"keys": ["ctrl+alt+left"],
-		"command": "set_layout",
-		"args":
-		{
-			"cols": [0.0, 0.33, 1.0],
-			"rows": [0.0, 1.0],
-			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
-		}
-	},
-	{
-		"keys": ["ctrl+alt+right"],
-		"command": "set_layout",
-		"args":
-		{
-			"cols": [0.0, 0.66, 1.0],
-			"rows": [0.0, 1.0],
-			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
-		}
-	},
-	{
-		"keys": ["ctrl+alt+up"],
-		"command": "set_layout",
-		"args":
-		{
-			"cols": [0.0, 0.5, 1.0],
-			"rows": [0.0, 1.0],
-			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
-		}
-	},
-	{
-		"keys": ["ctrl+alt+down"],
-		"command": "set_layout",
-		"args":
-		{
-			"cols": [0.0, 1.0],
-			"rows": [0.0, 1.0],
-			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
-		}
-	},
-	{ "keys": ["ctrl+shift+left"], "command": "move_to_group", "args": { "group": 0 } },
-	{ "keys": ["ctrl+shift+right"], "command": "move_to_group", "args": { "group": 1 } }*/
+    { "keys": ["ctrl+alt+shift+t"], "command": "bruno_terminer_tache" },
+    { "keys": ["ctrl+alt+shift+n"], "command": "bruno_nouvelle_tache" },
 
+
+    // --------------------------------------------------------------------------------
+    // bruno_date.py (à ajouter dans le paquet "User") : pour insérer la date du jour au
+    // format : Nom_du_jour Numéro_de_jour Nom_du_mois Année
+    // ex : Mardi 15 Octobre 2015
+
+    {"keys": ["ctrl+shift+,"], "command": "bruno_insere_date" },
+    {"keys": ["ctrl+shift+alt+;"], "command": "bruno_insere_heure" },
+
+
+    // --------------------------------------------------------------------------------
+    // SmartMarkdown : redéfinition du raccourci pour augmenter le niveau d'un titre
+    // ⌘ ⇧ ; (au lieu de ⌘ ⇧ .)
+    // Le raccourci pour diminuer le niveau d'un titre est : ⌘ ⇧ ,
+
+    { "keys": ["ctrl+shift+;"], "command": "change_heading_level", "args": {"up": true}, "context": [{"key": "selector", "operator": "equal", "operand": "text.html.markdown"}] },
+    { "keys": ["ctrl+shift+,"], "command": "change_heading_level",  "args": {"up": false}, "context": [{"key": "selector", "operator": "equal", "operand": "text.html.markdown"}] },
+
+
+    // --------------------------------------------------------------------------------
+    // Terminus : définition d'un raccourci pour afficher/cacher le panneau du Terminal : Ctrl + Shift + ù
+
+    { "keys": ["ctrl+shift+ù"], "command": "toggle_terminus_panel" }
+
+    // --------------------------------------------------------------------------------
+    // Config pour modifier la disposition des écrans :
+    //     - ctrl+alt+left     : divise les 2 écrans en 1/3,2/3
+    //     - ctrl+alt+right    : divise les 2 écrans en 2/3,1/3
+    //     - ctrl+alt+up       : divise les 2 écrans en 50/50
+    //     - ctrl+alt+down     : ne garde qu'un écran
+    //     - ctrl+shift+left   : déplace le fichier actif dans l'écran de gauche
+    //     - ctrl+shift+right  : déplace le fichier actif dans l'écran de droite
+
+    /*{
+        "keys": ["ctrl+alt+left"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.33, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+        }
+    },
+    {
+        "keys": ["ctrl+alt+right"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.66, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+        }
+    },
+    {
+        "keys": ["ctrl+alt+up"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.5, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+        }
+    },
+    {
+        "keys": ["ctrl+alt+down"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+        }
+    },
+    { "keys": ["ctrl+shift+left"], "command": "move_to_group", "args": { "group": 0 } },
+    { "keys": ["ctrl+shift+right"], "command": "move_to_group", "args": { "group": 1 } }*/
 
 ]
