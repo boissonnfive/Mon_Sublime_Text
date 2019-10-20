@@ -2,7 +2,6 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"Markdown Todo"
 	],
 	"installed_packages":
 	[
@@ -19,7 +18,6 @@
 		"Gist",
 		"Git",
 		"Increment Selection",
-		"Markdown Todo",
 		"MarkdownEditing",
 		"MarkdownPreview",
 		"MarkdownTOC",
